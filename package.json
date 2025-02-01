@@ -1,0 +1,42 @@
+{
+  "name": "golden-raspberry-awards",
+  "version": "1.0.0",
+  "description": "Golden Raspberry Awards",
+  "license": "UNLICENSED",
+  "contributors": [
+    {
+      "name": "Rafael Mota Ribeiro Xavier",
+      "email": "mottacfh.mox@gmail.com",
+      "url": "https://www.linkedin.com/in/motarxrafael/"
+    }
+  ],
+  "engines": {
+    "node": ">=18.20.3"
+  },
+  "scripts": {
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
+    "start": "ts-node src/server.ts",
+    "test": "jest --detectOpenHandles --forceExit",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/jest": "^29.5.14",
+    "csv-parser": "^3.2.0",
+    "express": "^4.21.2",
+    "jest": "^29.7.0",
+    "reflect-metadata": "^0.2.2",
+    "sqlite3": "^5.1.7",
+    "ts-node": "^10.9.2",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.0",
+    "@types/supertest": "^6.0.2",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.3"
+  }
+}
